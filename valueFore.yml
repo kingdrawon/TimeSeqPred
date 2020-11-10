@@ -1,0 +1,13 @@
+时序数据预测
+---
+tags:
+  - 风火轮（hotwheels）-时序预测
+consumes: [
+            "multipart/form-data"
+          ]
+parameters:
+  - in: formData
+    name: file
+    type: file
+    required: true
+    description: upload a image file
