@@ -28,7 +28,7 @@ def valueForecast(file):
     users = set(data.iloc[:,0].values)
 
     # 用电量预测
-    result_pre = pd.DataFrame(columns=['USER', 'DATA_DATE', 'DATA_DATE1', 'DATA_DATE2', 'DATA_DATE3', 'DATA_DATE4', 'DATA_DATE5'])
+    result_pre = pd.DataFrame(columns=['DATA_DATE', 'DATA_DATE1', 'DATA_DATE2', 'DATA_DATE3', 'DATA_DATE4', 'DATA_DATE5'])
     for user in users:
         subdata = data.loc[data.iloc[:,0]==user]
         df_index = pd.MultiIndex.from_frame(subdata.iloc[:, 1:2])
