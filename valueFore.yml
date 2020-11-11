@@ -1,4 +1,6 @@
 时序数据预测
+
+例子：file 文件包含三列，第一列用户,第二列日期，第三列数值
 ---
 tags:
   - 风火轮（hotwheels）-时序预测
@@ -10,4 +12,9 @@ parameters:
     name: file
     type: file
     required: true
-    description: upload a image file
+    description: upload a file
+responses:
+  500:
+    description: 错误
+  200:
+    description: 正常
